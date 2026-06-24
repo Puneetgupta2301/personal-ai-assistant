@@ -17,10 +17,11 @@ def run_agent(chat_history: list) -> tuple[str, list]:
 
     tools = get_tools()
     tool_logs = []
+
     llm = ChatGroq(
-    model="llama3-70b-8192",
-    api_key=os.getenv("GROQ_API_KEY"),
-    temperature=0,
+        model="llama-3.3-70b-versatile",
+        api_key=os.getenv("GROQ_API_KEY"),
+        temperature=0,
     ).bind_tools(tools)
 
     formatted_messages = [SystemMessage(content=SYSTEM_PROMPT)]
