@@ -2,5 +2,6 @@
 .streamlit/secrets.toml
 __pycache__/
 *.pyc
-token.json
-credentials.json
+*.pyo
+agent/__pycache__/
+mcp/__pycache__/
