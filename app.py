@@ -1,11 +1,15 @@
 import streamlit as st
 import os
+from dotenv import load_dotenv
 from agent.graph import run_agent
 
-os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
-os.environ["GITHUB_TOKEN"] = st.secrets["GITHUB_TOKEN"]
-os.environ["DATABASE_URL"] = st.secrets["DATABASE_URL"]
+load_dotenv()
 
+if "GROQ_API_KEY" not in os.environ:
+    os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
+    os.environ["GITHUB_TOKEN"] = st.secrets["GITHUB_TOKEN"]
+    os.environ["DATABASE_URL"] = st.secrets["DATABASE_URL"]
+    
 st.set_page_config(
     page_title="Personal AI Assistant",
     page_icon="🤖",
