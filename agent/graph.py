@@ -18,9 +18,9 @@ def run_agent(chat_history: list) -> tuple[str, list]:
     tools = get_tools()
     tool_logs = []
     llm = ChatGroq(
-        model="llama3-groq-70b-8192-tool-use-preview",
-        api_key=os.getenv("GROQ_API_KEY"),
-        temperature=0,
+    model="llama3-70b-8192",
+    api_key=os.getenv("GROQ_API_KEY"),
+    temperature=0,
     ).bind_tools(tools)
 
     formatted_messages = [SystemMessage(content=SYSTEM_PROMPT)]
