@@ -2,7 +2,7 @@
 
 An agentic AI assistant that autonomously selects and uses tools to answer questions, search the web, interact with GitHub, and query a database — all in a clean chat interface.
 
-**Live Demo:** [your-app.streamlit.app](https://your-app.streamlit.app)
+**Live Demo:** https://personal-ai-assistant-2gabtp4gwalgqnrpunsdsl.streamlit.app/
 
 ---
 
@@ -46,7 +46,7 @@ User → Streamlit UI → LangGraph Agent → Groq LLM (Llama 3.3 70B)
 
 **1. Clone the repo**
 ```bash
-git clone https://github.com/yourusername/personal-ai-assistant
+git clone https://github.com/puneetgupta2301/personal-ai-assistant
 cd personal-ai-assistant
 ```
 
@@ -117,4 +117,4 @@ App runs at `http://localhost:8501`
 ## Author
 
 **Puneet Kumar Gupta**  
-[LinkedIn](https://linkedin.com/in/pun) · [GitHub](https://github.com/puneetgupta2301)
+[LinkedIn](https://linkedin.com/in/puneetgupta) · [GitHub](https://github.com/puneetgupta2301)
