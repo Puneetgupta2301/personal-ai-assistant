@@ -1,0 +1,12 @@
+streamlit
+langchain
+langchain-groq
+langgraph
+langchain-community
+psycopg2-binary
+python-dotenv
+requests
+PyGithub
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
